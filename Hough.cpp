@@ -43,7 +43,7 @@ int main( )
  
 	namedWindow("【效果图】", 0);
 	cvResizeWindow("【效果图】", 800, 1000);
-	createTrackbar("值", "【效果图】", &g_nthreshold, 200, on_HoughLines);
+	createTrackbar("值：", "【效果图】", &g_nthreshold, 200, on_HoughLines);
  
 	Canny(g_srcImage, g_midImage, 50, 200, 3);
 	cvtColor(g_midImage, g_dstImage, CV_GRAY2BGR);
